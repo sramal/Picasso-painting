@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    max-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+}
+
+#top {
+    display: grid;
+}
+
+.top-left,
+.top-middle,
+.top-right,
+.middle {
+    background-color: #02b0bc;
+    position: relative;
+}
+
+.bottom {
+    background-color: rgb(190, 227, 116);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle-red {
+    background-color: rgb(253, 169, 169);
+}
+
+.circle-yellow {
+    background-color: rgb(244, 244, 114);
+}
+
+#circle-1 {
+    position: absolute;
+}
+
+#circle-2 {
+    position: absolute;
+}
+
+#circle-3 {
+    position: absolute;
+    z-index: 1;
+}
+
+#circle-4 {
+    position: absolute;
+    z-index: 1;
+}
+
+#circle-5 {
+    position: absolute;
+}
+
+#circle-6 {
+    position: absolute;
+}
+
+.person {
+    position: absolute;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+}
+
+#triangle-1 {
+    z-index: 1;
+}
+
+#triangle-2 {
+    z-index: 2;
+}
+
+#vistor-form {
+    width: 100%;
+}
+
+label {
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+input {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#reset {
+    background-color: rgb(234, 163, 163);
+}
+
+#submit {
+    background-color: rgb(137, 207, 137);
+}
