@@ -25,11 +25,9 @@ function paintPicasso() {
     let gap = canvasWidth * 0.015;
     canvas.style.gap = gap + "px";
     let row3 = (canvasHeight - 2 * gap) / 16;
-    let row4 = row3 / 2;
     let row1 = row3 * 5;
-    let row2 = canvasHeight - row1 - row3 - row4 - 2 * gap;
-    canvas.style.gridTemplateRows =
-        row1 + "px " + row2 + "px " + row3 + "px " + row4 + "px";
+    let row2 = canvasHeight - row1 - row3 - 2 * gap;
+    canvas.style.gridTemplateRows = row1 + "px " + row2 + "px " + row3 + "px";
 
     // divide the top row into 3 equal column and 2 gaps.
     let col = (canvasWidth - 2 * gap) / 3;
