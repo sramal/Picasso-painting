@@ -2,24 +2,29 @@ function paintPicasso() {
     // Get window width and height.
     let canvasWidth;
     let canvasHeight;
-    if (window.innerWidth > window.innerHeight) {
+    let reduce = 0.75;
+    if (window.innerWidth < 1100) {
+        reduce = 1;
+    }
+
+    if (window.innerWidth * reduce > window.innerHeight) {
         canvasWidth = window.innerHeight * 1.7 * 0.9;
-        if (canvasWidth > window.innerWidth) {
-            canvasWidth = window.innerWidth * 0.9;
-            canvasHeight = (window.innerWidth * 0.9) / 1.7;
+        if (canvasWidth > window.innerWidth * reduce) {
+            canvasWidth = window.innerWidth * reduce * 0.9;
+            canvasHeight = (window.innerWidth * reduce * 0.9) / 1.7;
         } else {
             canvasHeight = window.innerHeight * 0.9;
         }
     } else {
-        canvasWidth = window.innerWidth * 0.9;
-        canvasHeight = (window.innerWidth * 0.9) / 1.7;
+        canvasWidth = window.innerWidth * reduce * 0.9;
+        canvasHeight = (window.innerWidth * reduce * 0.9) / 1.7;
     }
 
     // calculate the canvas size based on window width and height.
     const canvas = document.getElementById("canvas");
     canvas.style.width = canvasWidth + "px";
     canvas.style.height = canvasHeight + "px";
-    canvas.style.margin = "5%";
+    canvas.style.margin = "1%";
 
     // divide canvas into 3 row with gap between
     let gap = canvasWidth * 0.015;
