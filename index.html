@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./external.css" />
+        <title>Picasso Painting</title>
+    </head>
+    <body onload="paintPicasso()">
+        <main id="canvas">
+            <div id="top">
+                <div class="top-left">
+                    <div
+                        class="circle circle-small circle-red"
+                        id="circle-1"
+                    ></div>
+                    <div
+                        class="circle circle-big circle-yellow"
+                        id="circle-2"
+                    ></div>
+                    <div
+                        class="circle circle-small circle-red"
+                        id="circle-3"
+                    ></div>
+                    <div
+                        class="circle circle-big circle-red"
+                        id="circle-4"
+                    ></div>
+                </div>
+                <div class="top-middle">
+                    <div
+                        class="circle circle-small circle-red"
+                        id="circle-5"
+                    ></div>
+                </div>
+                <div class="top-right"></div>
+            </div>
+            <div class="middle">
+                <div
+                    class="circle circle-small circle-yellow"
+                    id="circle-6"
+                ></div>
+                <div class="person" id="person-1">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person one"
+                        id="image-person-1"
+                    />
+                </div>
+                <div class="person" id="person-2">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person two"
+                        id="image-person-2"
+                    />
+                </div>
+                <div class="person" id="person-3">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person three"
+                        id="image-person-3"
+                    />
+                </div>
+                <div class="person" id="person-4">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person four"
+                        id="image-person-4"
+                    />
+                </div>
+                <div class="person" id="person-5">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person five"
+                        id="image-person-5"
+                    />
+                </div>
+                <div class="person" id="person-6">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person six"
+                        id="image-person-6"
+                    />
+                </div>
+                <div class="person" id="person-7">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person seven"
+                        id="image-person-7"
+                    />
+                </div>
+                <div class="person" id="person-8">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person eight"
+                        id="image-person-8"
+                    />
+                </div>
+                <div class="person" id="person-9">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person nine"
+                        id="image-person-9"
+                    />
+                </div>
+                <div class="person" id="person-10">
+                    <img
+                        src="./man-standing-up-2.png"
+                        alt="Blue person ten"
+                        id="image-person-10"
+                    />
+                </div>
+                <div class="person" id="person-11">
+                    <img
+                        src="./man-standing-up-gray-2.png"
+                        alt="Gray person one"
+                        id="image-person-11"
+                    />
+                </div>
+                <div class="person" id="person-12">
+                    <img
+                        src="./man-standing-up-gray-2.png"
+                        alt="Gray person two"
+                        id="image-person-12"
+                    />
+                </div>
+                <div class="person" id="person-13">
+                    <img
+                        src="./man-standing-up-gray-2.png"
+                        alt="Gray person three"
+                        id="image-person-13"
+                    />
+                </div>
+                <div class="person" id="person-14">
+                    <img
+                        src="./man-standing-up-gray-2.png"
+                        alt="Gray person four"
+                        id="image-person-14"
+                    />
+                </div>
+                <div class="triangle" id="triangle-1"></div>
+                <div class="triangle" id="triangle-2"></div>
+            </div>
+            <div class="bottom"></div>
+        </main>
+
+        <section id="vistor-form">
+            <div>
+                <div>
+                    Person icons made by
+                    <a href="https://www.freepik.com" title="Freepik">
+                        Freepik
+                    </a>
+                    from
+                    <a href="https://www.flaticon.com/" title="Flaticon"
+                        >www.flaticon.com'</a
+                    >
+                </div>
+            </div>
+
+            <br />
+
+            <form action="./formsubmitted.html" method="GET">
+                <div>
+                    <label for="fname">First Name: </label>
+                    <br />
+                    <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        value=""
+                        required
+                    />
+                </div>
+
+                <br />
+
+                <div>
+                    <label for="lname">Last Name:&nbsp</label>
+                    <br />
+                    <input
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        value=""
+                        required
+                    />
+                </div>
+
+                <br />
+
+                <div>
+                    <label for="email"
+                        >Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label
+                    >
+                    <br />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value=""
+                        required
+                    />
+                </div>
+
+                <br />
+
+                <div>
+                    <input type="reset" name="" id="reset" />
+                    <input type="submit" id="submit" />
+                </div>
+            </form>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
